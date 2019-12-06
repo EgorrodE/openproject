@@ -29,7 +29,7 @@
 
 require 'spec_helper'
 
-describe DeliverWatcherNotificationJob, type: :model do
+describe DeliverWatcherAddedNotificationJob, type: :model do
   let(:project) { FactoryBot.create(:project) }
   let(:role) { FactoryBot.create(:role, permissions: [:view_work_packages]) }
   let(:watcher_setter) { FactoryBot.create(:user) }
